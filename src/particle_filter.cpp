@@ -75,7 +75,6 @@ void ParticleFilter::prediction(double delta_t, double std_pos[], double velocit
 		particle.x += dist_x(gen);
 		particle.y += dist_y(gen);
 		particle.theta += dist_theta(gen);
-		//particle.theta = fmod(particle.theta, (2* M_PI));
 	}
 
 
